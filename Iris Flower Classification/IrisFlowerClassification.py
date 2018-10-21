@@ -16,9 +16,9 @@ labelencoder_y  = LabelEncoder()
 dependent_variable = labelencoder_y.fit_transform(dependent_variable)  #converts names setosa, versicolor and verginica into 1,2 and 3 respectively
 
 from sklearn.cross_validation import train_test_split #splitting the dataset into testing and training data
-independent_variables_train,independent_variables_test, dependent_variable_train, \ #'\' is used to break lines of code instead of one single long line
+independent_variables_train,independent_variables_test, dependent_variable_train,\
     dependent_variable_test = train_test_split(independent_variables,\
-                                                dependent_variable,test_size=0.2,random_state=0)
+                                                dependent_variable,test_size=0.2,random_state=0) #'\' is used to break lines of code instead of one single long line
     
 """Logistic Regression Classification"""
 from sklearn.linear_model import LogisticRegression
