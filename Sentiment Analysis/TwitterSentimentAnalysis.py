@@ -12,10 +12,10 @@ import pickle
 
 from tweepy import OAuthHandler #Authentication of API
 
-consumer_key = 'mnCscr8qMPKXZrB6VIlCo5DUr' # your twitter consumer_key
-consumer_secret = '2hWiO5AkAa9EMaMDTPQ6bJhwk8xE4p9Ee5gjeCIJ5gUah7Qfz1' # your twitter consumer_secret key
-access_token = '858194321362780160-9WvJhq94NrrWuhV2NdgP8Nj3thhrQe2' # your twitter access_token key
-access_secret = 'AcILcUcJe6FBNlefhGWFzkpPFvxjjCl6ZGHcbqoMXhRiN' # your twitter access_secret key
+consumer_key = '' # your twitter consumer_key
+consumer_secret = '' # your twitter consumer_secret key
+access_token = '' # your twitter access_token key
+access_secret = '' # your twitter access_secret key
 
 auth = OAuthHandler(consumer_key,consumer_secret) # Verifying whether the keys are valuable to authenticate with twitter
 auth.set_access_token(access_token,access_secret) # Verifying whether the keys are valuable to fetch tweets from twitter
