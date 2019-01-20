@@ -64,7 +64,7 @@ from sklearn.feature_extraction.text import CountVectorizer
 vectorizer = CountVectorizer(max_features=2000, min_df=3, max_df=0.6, stop_words=stopwords.words('english')) #max_features-> no/: of most frequent words to be considered
 #min_df -> excluding words that occurs in 3 reviews or less, max_df -> excluding words that occur in more than 60% of the reviews
 # stop_words -> excluding stop words
-X = vectorizer.fit_transform(X).toarray()
+X = vectorizer.fit_transform(preprocessed_review).toarray()
 
 #TfIdf model -> converts the above bag of words model to TF-IDF model
 
@@ -78,7 +78,7 @@ from sklearn.feature_extraction.text import TfidfVectorizer
 vectorizer = TfidfVectorizer(max_features=2000, min_df=10, max_df=0.6, stop_words=stopwords.words('english')) #max_features-> no/: of most frequent words to be considered
 #min_df -> excluding words that occurs in 3 reviews or less, max_df -> excluding words that occur in more than 60% of the reviews
 # stop_words -> excluding stop words
-X = vectorizer.fit_transform(X).toarray()
+X = vectorizer.fit_transform(preprocessed_review).toarray()
     
 # splitting the dataset into train and test data
 
